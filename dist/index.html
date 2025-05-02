@@ -6,6 +6,7 @@
     <title>DC Cafe Hub</title>
     <link rel="stylesheet" href="../src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
 
                 <!-- HEADER AREA -->
 
-                <div class="header bg-black lg:bg-transparent">
+                <div class="header bg-black lg:bg-transparent lg:absolute lg:w-[1440px]">
                     <div class="container2">
                         <div class="header_wrapper">
                         
@@ -31,10 +32,10 @@
     
                                 <div class="nav_d">
                                     <ul class="flex gap-10">
-                                        <li><a href="" class="text-[15px] text-dcwhite font-mon">About</a></li>
-                                        <li><a href="" class="text-[15px] text-dcwhite font-mon">Coffee</a></li>
-                                        <li><a href="" class="text-[15px] text-dcwhite font-mon">Spa Salon</a></li>
-                                        <li><a href="" class="text-[15px] text-dcwhite font-mon">Reach Us</a></li>
+                                        <li><a href="#abt" class="text-[15px] text-dcwhite font-mon">About</a></li>
+                                        <li><a href="#kape" class="text-[15px] text-dcwhite font-mon">Coffee</a></li>
+                                        <li><a href="#ispa" class="text-[15px] text-dcwhite font-mon">Spa Salon</a></li>
+                                        <li><a href="#rich" class="text-[15px] text-dcwhite font-mon">Reach Us</a></li>
                                     </ul>
                                 </div>
     
@@ -60,10 +61,10 @@
     
                                 <div class="nav_m absolute top-[75px] -right-6">
                                     <ul class="flex flex-col gap-4 items-center">
-                                        <li><a href="" class="text-xs text-dcwhite font-rub">About</a></li>
-                                        <li><a href="" class="text-xs text-dcwhite font-rub">Coffee</a></li>
-                                        <li><a href="" class="text-xs text-dcwhite font-rub">Spa Salon</a></li>
-                                        <li><a href="" class="text-xs text-dcwhite font-rub">Reach Us</a></li>
+                                        <li><a href="#abt" class="text-xs text-dcwhite font-rub">About</a></li>
+                                        <li><a href="#kape" class="text-xs text-dcwhite font-rub">Coffee</a></li>
+                                        <li><a href="#ispa" class="text-xs text-dcwhite font-rub">Spa Salon</a></li>
+                                        <li><a href="#rich" class="text-xs text-dcwhite font-rub">Reach Us</a></li>
     
                                         <h3 class="text-xs text-dcwhite font-rub">© D'ContainerHub</h3>
                                     </ul>
@@ -77,20 +78,26 @@
 
                 <!-- BANNER AREA -->
 
-                <div class="banner bg-banner bg-cover bg-center lg:absolute lg:top-0 lg:-z-10 lg:w-[1440px]">
-                    <div class="container2">
-                        <div class="banner_wrapper h-[800px] lg:h-[850px] flex flex-col gap-10 items-center justify-center">
-                            <h2 class="text-dcwhite text-[clamp(25px,4vw,52px)] text-center font-rub font-bold lg:w-[1000px]">Indulge in delicious, high-quality food while unwinding and treating yourself—all in one perfect destination.</h2>
+                <div class="banner relative w-full -z-10">
+                    <div class="banner_image">
+                        <img src="./img/bannerImage.jpg" alt="" class="w-full h-[800px] lg:h-auto object-cover">
+                    </div>
+                    <div class="container2 absolute inset-0">
+                        <div class="banner_wrapper flex flex-col gap-10 items-center justify-center text-center w-full h-full p-4">
+                            <h2 class="text-dcwhite text-[clamp(25px,4vw,52px)] font-rub font-bold max-w-[1000px]">
+                                Indulge in delicious, high-quality food while unwinding and treating yourself—all in one perfect destination.
+                            </h2>
                             <div class="banner_btn">
                                 <a href="" class="btndark">See Where We At <i class="fa-solid fa-location-dot"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
+                
 
                 <!-- ABOUT AREA -->
 
-                <div class="about py-16 bg-dcbgray">
+                <div id="abt" class="about py-16 bg-dcbgray">
                     <div class="container2">
                         <div class="about_wrapper flex flex-col gap-16">
                             <div class="about_image flex gap-2 items-center justify-center">
@@ -107,9 +114,294 @@
                     </div>
                 </div>
 
+                <!-- COFFEE AREA -->
+    
+                <div id="kape" class="coffee">
+                    <div class="coffee_wrapper flex flex-col-reverse lg:grid lg:grid-cols-2">
+                        <div class="coffee_image">
+                            <img src="./img/services-img-1.jpg" alt="" class="w-full">
+                        </div>
+                        <div class="coffee_text px-4 lg:px-12 my-8 flex flex-col gap-4">
+                            <h2 class="text-[clamp(36px,4vw,24px)] text-dcbrown text-center font-bold font-rub">Our Coffee</h2>
+                            <p class="text-[clamp(14px,4vw,16px)] font-rub py-2 lg:py-10">
+                                Our coffee is more than just a drink; it’s an experience. Sourced from the finest beans, expertly roasted to perfection, and brewed with care, every cup delivers rich flavors and an irresistible aroma. Whether you’re kick-starting your morning or enjoying a relaxing break, our coffee offers the perfect balance of quality, warmth, and satisfaction. From bold espressos to creamy lattes, every sip is crafted to delight your senses and elevate your day.
+                            </p>
+                            <div class="coffee_perks flex flex-col gap-2">
+
+                                <!-- PERK 1 -->
+
+                                <div class="lg:flex lg:gap-4 lg:items-center">
+                                    <div class="perk flex items-center gap-3">
+                                        <i class="fa-solid fa-chevron-right text-[clamp(16px,4vw,24px)] text-dcbrown font-extrabold"></i>
+                                        <h3 class="text-dcbrown font-bold font-rub text-base lg:hidden">Boosts Energy and Focus:</h3>
+                                    </div>
+                                    <p class="text-sm lg:text-base flex-1">
+                                        <span class="hidden lg:inline text-dcbrown font-bold">Boosts Energy and Focus:</span>
+                                        Coffee provides a natural energy lift, helping you stay alert and focused throughout your day.
+                                    </p>
+                                </div>
+
+                                <!-- PERK 2 -->
+    
+                                <div class="lg:flex lg:gap-4 lg:items-center">
+                                    <div class="perk flex items-center gap-3">
+                                        <i class="fa-solid fa-chevron-right text-[clamp(16px,4vw,24px)] text-dcbrown font-extrabold"></i>
+                                        <h3 class="text-dcbrown font-bold font-rub text-base lg:hidden">Rich in Antioxidants:</h3>
+                                    </div>
+                                    <p class="text-sm lg:text-base flex-1">
+                                        <span class="hidden lg:inline text-dcbrown font-bold">Rich in Antioxidants:</span>
+                                        Packed with antioxidants, coffee can support your overall health by combating harmful free radicals.
+                                    </p>
+                                </div>
+
+                                <!-- PERK 3 -->
+
+                                <div class="lg:flex lg:gap-4 lg:items-center">
+                                    <div class="perk flex items-center gap-3">
+                                        <i class="fa-solid fa-chevron-right text-[clamp(16px,4vw,24px)] text-dcbrown font-extrabold"></i>
+                                        <h3 class="text-dcbrown font-bold font-rub text-base lg:hidden">Enhances Social Connections:</h3>
+                                    </div>
+                                    <p class="text-sm lg:text-base flex-1">
+                                        <span class="hidden lg:inline text-dcbrown font-bold">Enhances Social Connections:</span>
+                                        Whether shared with friends or enjoyed during a quiet moment, coffee fosters connection and relaxation in everyday life.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="coffee_btn flex gap-10 mt-4">
+                                <a href="" class="btndark md:w-[210px] lg:w-[210px]">Make a Reservation</a>
+                                <a href="" class="btnlight md:w-[210px] lg:w-[210px]">Menu</a>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+
+                <!-- SLIDER AREA -->
+
+                <div class="slider">
+                    <div id="slider_stage" class="w-full flex gap-5 my-5">
+                        <div class="slider_image mx-auto">
+                            <img src="./img/coffee-1.jpg" alt="" class="w-100% h-100% mx-auto">
+                        </div>
+                        <div class="slider_image mx-auto">
+                            <img src="./img/coffee-2.jpg" alt="" class="w-100% h-100% mx-auto">
+                        </div>
+                        <div class="slider_image mx-auto">
+                            <img src="./img/coffee-3.jpg" alt="" class="w-100% h-100% mx-auto">
+                        </div>
+                        <div class="slider_image mx-auto">
+                            <img src="./img/coffee-4.jpg" alt="" class="w-100% h-100% mx-auto">
+                        </div>
+                        <div class="slider_image mx-auto">
+                            <img src="./img/coffee-5.jpg" alt="" class="w-100% h-100% mx-auto">
+                        </div>
+                        <div class="slider_image mx-auto">
+                            <img src="./img/coffee-6.jpg" alt="" class="w-100% h-100% mx-auto">
+                        </div>
+                        <div class="slider_image mx-auto">
+                            <img src="./img/coffee-7.jpg" alt="" class="w-100% h-100% mx-auto">
+                        </div>
+                        <div class="slider_image mx-auto">
+                            <img src="./img/coffee-8.jpg" alt="" class="w-100% h-100% mx-auto">
+                        </div>
+                        <div class="slider_image mx-auto">
+                            <img src="./img/coffee-9.jpg" alt="" class="w-100% h-100% mx-auto">
+                        </div>
+                        <div class="slider_image mx-auto">
+                            <img src="./img/coffee-10.jpg" alt="" class="w-100% h-100% mx-auto">
+                        </div>
+                        <div class="slider_image mx-auto">
+                            <img src="./img/coffee-11.jpg" alt="" class="w-100% h-100% mx-auto">
+                        </div>
+                        <div class="slider_image mx-auto">
+                            <img src="./img/coffee-12.jpg" alt="" class="w-100% h-100% mx-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SPA AREA -->
+
+                <div id="ispa" class="spa">
+                    <div class="container2">
+                        <div class="spa_wrapper flex flex-col lg:flex-row-reverse lg:justify-center lg:items-center">
+                            <div class="spa_image">
+                                <img src="./img/ES-Final Logo.png" alt="" class="w-full">
+                            </div>
+                            <div class="spa_text flex flex-col gap-4 lg:max-w-[630px]">
+                                <h2 class="text-[clamp(36px,4vw,24px)] text-dcbrown text-rub text-center font-bold pt-7">Spa Salon</h2>
+                                <p class="text-base font-rub">Escape to our spa salon, where relaxation meets rejuvenation. Immerse yourself in a tranquil atmosphere designed to soothe your senses and refresh your spirit. From luxurious massages and revitalizing facials to expertly curated treatments, our skilled professionals are dedicated to helping you look and feel your best. Whether you're seeking a moment of calm or a complete transformation, our spa salon is your sanctuary for wellness and beauty.</p>
+                                <p class="text-base font-rub pb-4 border-b-2 border-gray-500">Step into our hair salon and discover the perfect blend of style and expertise. Our talented stylists are passionate about creating looks that complement your unique personality, whether it’s a fresh cut, vibrant color, or a complete makeover. Using top-quality products and the latest techniques, we ensure your hair not only looks amazing but feels healthy and radiant. From everyday chic to show-stopping glamour, our salon is your destination for confidence-boosting transformations.</p>
+                                <div class="spa_number">
+                                    <h3 class="text-[clamp(15px,4vw,18px)] font-mon font-semibold py-1">Our Direct Line:</h3>
+                                    <h2 class="text-[clamp(17.5px,4vw,36px)] text-dcbrown font-rub font-semibold">+63 915 110 1112 | +63 915 463 5232</h2>
+                                </div>
+                                <div class="spa_btn flex gap-10">
+                                    <a href="" class="btndark lg:w-[210px]">Make A Reservation</a>
+                                    <a href="" class="btnlight lg:w-[210px]">Services</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SPA SLIDER -->
+
+                <div class="slider2">
+                    <div id="slider_stage2" class="w-full flex gap-5 my-5">
+                        <div class="slider2_image mx-auto">
+                            <img src="./img/salon-1.jpg" alt="" class="w-100% h-100% mx-auto">
+                        </div>
+                        <div class="slider2_image mx-auto">
+                            <img src="./img/salon-2.png" alt="" class="w-100% h-100% mx-auto">
+                        </div>
+                        <div class="slider2_image mx-auto">
+                            <img src="./img/salon-3.jpg" alt="" class="w-100% h-100% mx-auto">
+                        </div>
+                        <div class="slider2_image mx-auto">
+                            <img src="./img/salon-4.jpg" alt="" class="w-100% h-100% mx-auto">
+                        </div>
+                        <div class="slider2_image mx-auto">
+                            <img src="./img/salon-5.jpg" alt="" class="w-100% h-100% mx-auto">
+                        </div>
+                        <div class="slider2_image mx-auto">
+                            <img src="./img/salon-6.jpg" alt="" class="w-100% h-100% mx-auto">
+                        </div>
+                        <div class="slider2_image mx-auto">
+                            <img src="./img/salon-7.jpg" alt="" class="w-100% h-100% mx-auto">
+                        </div>
+                        <div class="slider2_image mx-auto">
+                            <img src="./img/salon-8.jpg" alt="" class="w-100% h-100% mx-auto">
+                        </div>
+                        <div class="slider2_image mx-auto">
+                            <img src="./img/salon-9.jpg" alt="" class="w-100% h-100% mx-auto">
+                        </div>
+                        <div class="slider2_image mx-auto">
+                            <img src="./img/salon-10.jpg"" alt="" class="w-100% h-100% mx-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTACT US AREA -->
+
+                <div class="contactus bg-dcbgray py-[130px] px-[24px]">
+                    <div class="container2">
+                        <div class="contactus_wrapper flex flex-col gap-5 w-full">
+                            <p class="text-[clamp(20px,4vw,24px)] text-center font-rub max-w-[1000px] mx-auto">If you’re craving a relaxing escape where you can savor every sip of your coffee in peace, look no further. Your perfect moment awaits—why wait to indulge?</p>
+                            <div class="contactus_btn mx-auto">
+                                <a href="" class="btndark">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TESTIMONIALS AREA -->
+
+                <div class="testimonials py-12">
+                    <div class="container2">
+                        <div class="testimonials_wrapper">
+                            <div class="testimonials_title pb-5 lg:pb-20">
+                                <h2 class="text-[clamp(16px,4vw,48px)] text-center font-mon font-semibold">What Our Clients Are Saying</h2>
+                                <h3 class="text-[12px] text-center font-rub font-semibold md:hidden lg:hidden">Real Experiences, Genuine Feedback</h3>
+                            </div>
+                            <div class="testimonials_content flex flex-wrap gap-4 w-full">
+
+                                <!-- TESTIMONIAL 1 -->
+
+                                <div class="testimonial_card py-5 flex flex-col lg:flex-row gap-5 mx-auto">
+                                    <div class="author_image">
+                                        <img src="./img/testimonial-1.jpg" alt="" class="w-[97px] h-[97px] mx-auto rounded-xl">
+                                    </div>
+                                    <div class="author_details flex flex-col gap-4 max-w-[336px]">
+                                        <h3 class="text-base text-center lg:text-left font-mon font-bold">Elga Edad</h3>
+                                        <p class="text-[14px] font-mon">D’ Container Cafe Hub offers a warm, homey atmosphere and delicious food reminiscent of cherished family recipes. Their arroz a la cubana brings back nostalgic flavors, while the beef tapa and dynamite are must-tries. More than just a trendy spot, it's a place worth revisiting. Enjoy customizable coffee and a refreshing mango drink, and for pet lovers, it stands out as the top pet-friendly destination. A must-visit experience!</p>
+                                    </div>
+                                </div>
+
+                                <!-- TESTIMONIAL 2 -->
+
+                                <div class="testimonial_card py-5 flex flex-col lg:flex-row gap-4 mx-auto">
+                                    <div class="author_image">
+                                        <img src="./img/testimonial-2.jpg" alt="" class="w-[97px] h-[97px] mx-auto rounded-xl">
+                                    </div>
+                                    <div class="author_details flex flex-col gap-4 max-w-[336px]">
+                                        <h3 class="text-base text-center lg:text-left font-mon font-bold">Tom Alvarado</h3>
+                                        <p class="text-[14px] font-mon">With an excellent food and drinks and a very cozy ambiance, perfect for your any or special occasion. I'm highly recommend the newest Art Hub Cafe in Alaminos Laguna. D' CONTAINER HUB CAFE Mabuhay !!</p>
+                                    </div>
+                                </div>
+
+                                <!-- TESTIMONIAL 3 -->
+
+                                <div class="testimonial_card py-5 flex flex-col lg:flex-row gap-4 mx-auto">
+                                    <div class="author_image">
+                                        <img src="./img/testimonial-3.jpg" alt="" class="w-[97px] h-[97px] mx-auto rounded-xl">
+                                    </div>
+                                    <div class="author_details flex flex-col gap-4 max-w-[336px]">
+                                        <h3 class="text-base text-center lg:text-left font-mon font-bold">Rudy Aguilar</h3>
+                                        <p class="text-[14px] font-mon">The staff is very friendly. It's a very good place. The price is reasonable. Overall, it looks great. Keep it up!!!</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- REACH US AREA -->
+
+                <div id="rich" class="reachus bg-dcbgray py-20">
+                        <div class="reachus_wrapper flex flex-col lg:flex-row lg:items-center gap-10">
+
+                            <div class="reachus_text flex flex-col gap-20 lg:w-[600px] px-6">
+                                    <h2 class="text-[clamp(30px,4vw,36px)] text-center text-dcbrown font-rub font-bold">D Container Cafe Hub Exquisite Salon Spa</h2>
+                                    <div class="reachus_list">
+                                        <ul class="flex flex-col gap-4">
+                                            <li><a href="" class="flex gap-8 items-center"><i class="fa-solid fa-mobile-screen text-[25px]"></i><p class="text-[clamp(16px,4vw,20px)] font-mon">+63 915 110 1112 | +63 915 463 5232</p></a></li>
+                                            <li><a href="" class="flex gap-8 items-center"><i class="fa-solid fa-location-dot text-[25px]"></i><p class="text-[clamp(16px,4vw,20px)] font-mon">Blk 4 lot 2 Anne Martins Subdivision Brgy. San Miguel Alaminos Laguna (Near Brgy. Hall)</p></a></li>
+                                            <li><a href="" class="flex gap-8 items-center"><i class="fa-brands fa-facebook-f text-[25px]"></i><p class="text-[clamp(16px,4vw,20px)] font-mon">D Container Cafe Hub | ExquiSite Salon Spa & Esthetics</p></a></li>
+                                            <li><a href="" class="flex gap-6 items-center"><i class="fa-brands fa-instagram text-[25px]"></i><p class="text-[clamp(16px,4vw,20px)] font-mon">D Container Cafe Hub | ExquiSite Salon Spa & Esthetics</p></a></li>
+                                        </ul>
+                                    </div>
+                                <div class="reachus_btn">
+                                    <a href="" class="btndark">Inquire Now</a>
+                                </div>
+                            </div>
+
+                            <div class="reachus_maps h-[500px] lg:h-[800px] lg:w-[800px] relative z-0">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7740.880998843337!2d121.258026!3d14.051146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd6900286aaa39%3A0xb75fae24b925907a!2sD&#39;Container%20Cafe%20Hub!5e0!3m2!1sen!2sph!4v1746157696746!5m2!1sen!2sph" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="px-6 lg:px-0"></iframe>
+                                <div class="absolute -bottom-16 -left-16 -z-10">
+                                    <span class="lg:inline-block bg-dcbrown p-[380px] hidden"></span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <!-- FOOTER AREA -->
+
+                <div class="footer bg-dcdbrown py-[76px]">
+                    <div class="container2">
+                        <div class="footer_wrapper flex flex-col lg:flex-row lg:justify-between gap-4 items-center">
+                            <div class="footer_logo">
+                                <img src="./img/logo.png" alt="" class="max-w-[98px] max-h-[90px]">
+                            </div>
+                            <div class="footer_nav">
+                                <ul class="lg:flex lg:gap-10">
+                                    <li class="text-center"><a href="#abt" class="text-dcwhite text-[15px] font-mon font-semibold">About</a></li>
+                                    <li class="text-center"><a href="#kape" class="text-dcwhite text-[15px] font-mon font-semibold">Coffee</a></li>
+                                    <li class="text-center"><a href="#ispa" class="text-dcwhite text-[15px] font-mon font-semibold">Spa Salon</a></li>
+                                    <li class="text-center"><a href="#rich" class="text-dcwhite text-[15px] font-mon font-semibold">Reach Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer_cr">
+                                <p class="text-[15px] text-dcwhite text-center font-rub">© D'ContainerHub</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
     <script src="./js/script.js"></script>
 
 </body>
